@@ -7,7 +7,7 @@ import HtmlTestRunner
 import os
 
 # This name will put in the rapport title
-projectname = "Hello World unittest for c in python"
+projectname = "Test code_add(int a, int b) function"
 # This is the files .c and .h name 
 c_code_module_name = 'sourcecode_core'
 
@@ -37,17 +37,17 @@ class SourcecodeCoreTest(unittest.TestCase):
     ### Function of the test              ###
     #########################################
     
-    # Test 0 : Test if 4+2 = 5, it should equal 6 
+    # Test 0 of code_add(int a, int b) function: Test if 4+2 = 5, it should equal 6 
     # This test should not pass 
     def test_zero(self):
         self.assertEqual(self.module.code_add(4,2), 5,'Test 1 / Error / Not passed')
     
-    # Test 1 : Test if 1+3 = 4, it should equal 4
+    # Test 1 of code_add(int a, int b) function: Test if 1+3 = 4, it should equal 4
     # This test should pass
     def test_one(self):     
         self.assertEqual(self.module.code_add(1,3), 4,'Test 1 / Error / Not passed')
     
-    # Test 2 : Test if 2+3 = 3, it should equal 5
+    # Test 2 of code_add(int a, int b) function: Test if 2+3 = 3, it should equal 5
     # This test should not pass 
     def test_two(self):
         self.assertEqual(self.module.code_add(2,3), 3,'Test 2 / Error / Not passed')
@@ -56,19 +56,15 @@ class SourcecodeCoreTest(unittest.TestCase):
     ### End Function of the test          ###
     #########################################
 
-template_args = {
-    #'title': 'rapport'
-}
 
 if __name__ == '__main__':
     dir_name = "{0}".format(os.getcwd())
     unittest.main(exit=False,testRunner=HtmlTestRunner.HTMLTestRunner(
         template=''+dir_name+'/rapport_template/index.html', 
         open_in_browser=True,
-        report_title='Rapport of '+projectname+' Unit Test',
+        report_title='Test Rapport of '+projectname,
         # verbosity=2,
         report_name='rapport',
-        template_args=template_args
         )
         )
     # Delete the files that created to unittest
