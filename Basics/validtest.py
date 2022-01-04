@@ -1,3 +1,15 @@
+##########################################################
+# @file validtest.py                                     #
+# @brief Core of ValidTest                               #
+#                                                        #
+# @author Walid Amriou                                   #
+# @date 04/01/2022                                       #
+##########################################################
+
+
+##########################################################
+# lib's                                                  #
+##########################################################
 import unittest
 import cffi
 import importlib
@@ -6,10 +18,17 @@ import tracemalloc
 import HtmlTestRunner
 import os
 
+##########################################################
+# Config for test process and rapport                    #
+##########################################################
 # This name will put in the rapport title
 projectname = "Test code_add(int a, int b) function"
 # This is the files .c and .h name 
 c_code_module_name = 'sourcecode_core'
+
+##########################################################
+# Start Core Script                                      #
+##########################################################
 
 # Start tracing Python memory allocations.
 tracemalloc.start()
@@ -75,8 +94,7 @@ if __name__ == '__main__':
         if item.endswith(tuple(extensionslist)):
             os.remove(os.path.join(dir_name, item))
 
-    
-    
-
-
+##########################################################
+# Github repo: https://github.com/walidamriou/ValidTest  #
+##########################################################
 
