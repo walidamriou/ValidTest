@@ -77,9 +77,8 @@ class SourcecodeCoreTest(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    dir_name = "{0}".format(os.getcwd())
     unittest.main(exit=False,testRunner=HtmlTestRunner.HTMLTestRunner(
-        template=''+dir_name+'/rapport_template/index.html', 
+        template='./rapport_template/index.html', 
         open_in_browser=True,
         report_title='Test Rapport of '+projectname,
         # verbosity=2,
@@ -88,11 +87,10 @@ if __name__ == '__main__':
         )
     # Delete the files that created to unittest
     extensionslist = [".o", "_.c",".so"]
-    #dir_name = "{0}".format(os.getcwd())
-    test = os.listdir(dir_name)
+    test = os.listdir("./rapport_template")
     for item in test:
         if item.endswith(tuple(extensionslist)):
-            os.remove(os.path.join(dir_name, item))
+            os.remove(os.path.join("./rapport_template", item))
 
 ##########################################################
 # Github repo: https://github.com/walidamriou/ValidTest  #
