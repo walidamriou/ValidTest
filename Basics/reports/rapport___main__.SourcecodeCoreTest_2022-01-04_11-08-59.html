@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rapport</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Test Rapport of Test code_add(int a, int b) function</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-01-04 11:08:59</p>
+                <p class='attribute'><strong>Duration: </strong></p>
+                <p class='attribute'><strong>Summary: </strong>{'total': 3, 'error': 3, 'failure': 0, 'skip': 0, 'success': 0, 'duration': '59 ms'}</p>
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.SourcecodeCoreTest</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr class='warning'>
+                            <td class="col-xs-9">test_one (__main__.SourcecodeCoreTest)</td>
+                            <td class="col-xs-3">
+                                <span class="label label-warning">
+                                    
+                                        Error
+                                    
+                                </span>
+                                
+                                    &nbsp<button class="btn btn-default btn-xs">View</button>
+                                
+                            </td>
+                        </tr>
+                        
+                            <tr style="display:none;">
+                                <td class="col-xs-9">
+                                    
+                                    <p style="color:maroon;">CDefError: cannot parse "#ifndef SOURCECODE_CORE_H"
+<cdef source string>:2:1: Directives not supported yet</p>
+                                    <p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/cparser.py", line 336, in _parse
+    ast = _get_parser().parse(fullcsource)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/pycparser/c_parser.py", line 147, in parse
+    return self.cparser.parse(
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/pycparser/ply/yacc.py", line 331, in parse
+    return self.parseopt_notrack(input, lexer, debug, tracking, tokenfunc)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/pycparser/ply/yacc.py", line 1118, in parseopt_notrack
+    p.callable(pslice)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/pycparser/c_parser.py", line 571, in p_pp_directive
+    self._parse_error('Directives not supported yet',
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/pycparser/plyparser.py", line 67, in _parse_error
+    raise ParseError("%s: %s" % (coord, msg))
+pycparser.plyparser.ParseError: <cdef source string>:2:1: Directives not supported yet
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/validtest.py", line 34, in setUp
+    self.module = load(c_code_module_name)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/validtest.py", line 25, in load
+    ffibuilder.cdef(includes)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/api.py", line 112, in cdef
+    self._cdef(csource, override=override, packed=packed, pack=pack)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/api.py", line 126, in _cdef
+    self._parser.parse(csource, override=override, **options)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/cparser.py", line 389, in parse
+    self._internal_parse(csource)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/cparser.py", line 394, in _internal_parse
+    ast, macros, csource = self._parse(csource)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/cparser.py", line 338, in _parse
+    self.convert_pycparser_error(e, csource)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/cparser.py", line 367, in convert_pycparser_error
+    raise CDefError(msg)
+cffi.CDefError: cannot parse "#ifndef SOURCECODE_CORE_H"
+<cdef source string>:2:1: Directives not supported yet
+</p>
+                                </td>
+                            </tr>
+                        
+                        
+                        <tr class='warning'>
+                            <td class="col-xs-9">test_two (__main__.SourcecodeCoreTest)</td>
+                            <td class="col-xs-3">
+                                <span class="label label-warning">
+                                    
+                                        Error
+                                    
+                                </span>
+                                
+                                    &nbsp<button class="btn btn-default btn-xs">View</button>
+                                
+                            </td>
+                        </tr>
+                        
+                            <tr style="display:none;">
+                                <td class="col-xs-9">
+                                    
+                                    <p style="color:maroon;">CDefError: cannot parse "#ifndef SOURCECODE_CORE_H"
+<cdef source string>:2:1: Directives not supported yet</p>
+                                    <p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/cparser.py", line 336, in _parse
+    ast = _get_parser().parse(fullcsource)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/pycparser/c_parser.py", line 147, in parse
+    return self.cparser.parse(
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/pycparser/ply/yacc.py", line 331, in parse
+    return self.parseopt_notrack(input, lexer, debug, tracking, tokenfunc)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/pycparser/ply/yacc.py", line 1118, in parseopt_notrack
+    p.callable(pslice)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/pycparser/c_parser.py", line 571, in p_pp_directive
+    self._parse_error('Directives not supported yet',
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/pycparser/plyparser.py", line 67, in _parse_error
+    raise ParseError("%s: %s" % (coord, msg))
+pycparser.plyparser.ParseError: <cdef source string>:2:1: Directives not supported yet
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/validtest.py", line 34, in setUp
+    self.module = load(c_code_module_name)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/validtest.py", line 25, in load
+    ffibuilder.cdef(includes)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/api.py", line 112, in cdef
+    self._cdef(csource, override=override, packed=packed, pack=pack)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/api.py", line 126, in _cdef
+    self._parser.parse(csource, override=override, **options)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/cparser.py", line 389, in parse
+    self._internal_parse(csource)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/cparser.py", line 394, in _internal_parse
+    ast, macros, csource = self._parse(csource)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/cparser.py", line 338, in _parse
+    self.convert_pycparser_error(e, csource)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/cparser.py", line 367, in convert_pycparser_error
+    raise CDefError(msg)
+cffi.CDefError: cannot parse "#ifndef SOURCECODE_CORE_H"
+<cdef source string>:2:1: Directives not supported yet
+</p>
+                                </td>
+                            </tr>
+                        
+                        
+                        <tr class='warning'>
+                            <td class="col-xs-9">test_zero (__main__.SourcecodeCoreTest)</td>
+                            <td class="col-xs-3">
+                                <span class="label label-warning">
+                                    
+                                        Error
+                                    
+                                </span>
+                                
+                                    &nbsp<button class="btn btn-default btn-xs">View</button>
+                                
+                            </td>
+                        </tr>
+                        
+                            <tr style="display:none;">
+                                <td class="col-xs-9">
+                                    
+                                    <p style="color:maroon;">CDefError: cannot parse "#ifndef SOURCECODE_CORE_H"
+<cdef source string>:2:1: Directives not supported yet</p>
+                                    <p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/cparser.py", line 336, in _parse
+    ast = _get_parser().parse(fullcsource)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/pycparser/c_parser.py", line 147, in parse
+    return self.cparser.parse(
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/pycparser/ply/yacc.py", line 331, in parse
+    return self.parseopt_notrack(input, lexer, debug, tracking, tokenfunc)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/pycparser/ply/yacc.py", line 1118, in parseopt_notrack
+    p.callable(pslice)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/pycparser/c_parser.py", line 571, in p_pp_directive
+    self._parse_error('Directives not supported yet',
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/pycparser/plyparser.py", line 67, in _parse_error
+    raise ParseError("%s: %s" % (coord, msg))
+pycparser.plyparser.ParseError: <cdef source string>:2:1: Directives not supported yet
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/validtest.py", line 34, in setUp
+    self.module = load(c_code_module_name)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/validtest.py", line 25, in load
+    ffibuilder.cdef(includes)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/api.py", line 112, in cdef
+    self._cdef(csource, override=override, packed=packed, pack=pack)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/api.py", line 126, in _cdef
+    self._parser.parse(csource, override=override, **options)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/cparser.py", line 389, in parse
+    self._internal_parse(csource)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/cparser.py", line 394, in _internal_parse
+    ast, macros, csource = self._parse(csource)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/cparser.py", line 338, in _parse
+    self.convert_pycparser_error(e, csource)
+  File "/Users/walidamriou/Documents/GitHub/Valid_Embedded_Test_C/Basics/Valid_Embedded_Test_C_basics/lib/python3.8/site-packages/cffi/cparser.py", line 367, in convert_pycparser_error
+    raise CDefError(msg)
+cffi.CDefError: cannot parse "#ifndef SOURCECODE_CORE_H"
+<cdef source string>:2:1: Directives not supported yet
+</p>
+                                </td>
+                            </tr>
+                        
+                        
+                        <tr>
+                            <td>
+                               {'total': 3, 'error': 3, 'failure': 0, 'skip': 0, 'success': 0, 'duration': '59 ms'}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+
+<footer role="contentinfo" class="ui-section-footer">
+    <div class="ui-layout-container">
+        <center>
+
+      <div class="ui-section-footer__layout ui-layout-flex">
+            <p class="ui-section-footer--copyright ui-text-note">
+                <small> ValidTest | Developed by Walid Amriou
+                    <br>
+                    www.walidamriou.com
+                </small>
+            
+            </p>
+      </div>
+                </center>
+
+    </div>
+  </footer>
+  
+</html>
